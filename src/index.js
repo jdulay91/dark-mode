@@ -20,7 +20,7 @@ const App = () => {
       .catch(err => console.log(err));
   }, []);
   return (
-    <div className={'darkMode' ? "dark-mode App" : "App"}>
+    <div className={darkMode ? "dark-mode App" : "App"}>
       <Navbar />
       <Charts coinData={coinData} />
     </div>
